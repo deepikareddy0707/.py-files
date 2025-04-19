@@ -1,0 +1,27 @@
+#TASK-1
+try:
+    with open("sample.txt", "r") as file:
+        print("Reading file content:")
+        line_number = 1
+        for line in file:
+            print(f"Line {line_number}: {line.strip()}")
+            line_number += 1
+except FileNotFoundError:
+    print("Error: The file 'sample.txt' not found.")
+
+
+
+#TASK-2
+user_input = input("Enter text to write to the file: ")
+file_path = "/tmp/output.txt"
+with open(file_path, "w") as file:
+    file.write(user_input + "\n")
+print("Data written to:", file_path)
+additional_input = input("Enter additional text to append: ")
+with open(file_path, "a") as file:
+    file.write(additional_input + "\n")
+print("\nFinal content of output.txt:")
+with open(file_path, "r") as file:
+    for i, line in enumerate(file, start=1):
+        print(f"Line {i}: {line.strip()}")
+
