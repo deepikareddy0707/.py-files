@@ -1,0 +1,21 @@
+#TASK-1
+n=int(input("Enter a number:"))
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+number = 5
+print(f"The factorial of {number} is:", factorial(number))
+
+
+
+#TASK-2
+import math 
+a=float(input("Enter a number:"))
+square_root = math.sqrt(a)
+natural_log = math.log(a)
+sine_value = math.sin(a)
+print(f"Square root of {a} is: {square_root}")
+print(f"Natural logarithm (ln) of {a} is: {natural_log}")
+print(f"Sine of {a} radians is: {sine_value}")
