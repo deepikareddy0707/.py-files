@@ -1,0 +1,22 @@
+#TASK-1
+student_marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78
+}
+student_name = input("Enter the student's name: ")
+if student_name in student_marks:
+    print(f"{student_name}'s marks: {student_marks[student_name]}")
+else:
+    print("Student not found.")
+
+
+
+#TASK-2
+numbers = list(range(1, 11))
+first_five = numbers[:5]
+reversed_five = first_five[::-1]
+print("Original list:",numbers)
+print("Extracted First five elements:", first_five)
+print("Reversed extracted list:", reversed_five)
+
